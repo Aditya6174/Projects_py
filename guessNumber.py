@@ -1,8 +1,8 @@
 import random
-
+#We need to guess the number equal to the computer's number 
 def guess(x) :
     my_rand = random.randint(1,x)
-
+    #initialising a temporary variable for storing inputs
     guess = 0
     while(guess != my_rand) :
         guess = int(input(f'Guess a number between 1 and {x} :'))
@@ -13,7 +13,7 @@ def guess(x) :
 
 
     print(f"Yay right ans {my_rand}")
-
+# We let the computer guess our number 
 def computerGuess(x) :
     low = 1
     high = x
